@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id='app' class ="container center">
+      <div id='headers'>
+        <!-- Title and subtitles! -->
+        <h1 id='title'>Play the Guessing Game!</h1>
+        <h3 id='subtitle'>Guess a number between 1-100!</h3>
+      </div>
+
+      <div id='main'>
+        <div id='input-parent'>
+          <!-- Player's guess input, and submit button -->
+          <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+          <button id='submit' class='btn btn-success'>Go!</button>
+        </div>
+
+        <div id='guesses'>
+          <!-- unordered list of guesses -->
+          <ul id='guess-list'>
+            <li class='guess shadow'>-</li>
+            <li class='guess shadow'>-</li>
+            <li class='guess shadow'>-</li>
+            <li class='guess shadow'>-</li>
+            <li class='guess shadow'>-</li>
+          </ul>
+        </div>
+
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button id='reset' class='btn btn-warning'>Reset</button>
+          <button id='hint' class='btn btn-info'>Hint</button>
+        </div>
+      </div>
+    </div>
+
+    <div id='footer' class='container center'>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <img src='img/fa-logo@2x.png'></img>
+        </div>
+
+        <div class='col-sm-4'>
+          <h4>Project by Eren (Junjie) Chen</h4>
+        </div>
+
+        <div class='col-sm-4'>
+          <img src='img/grace_hopper_academy.png'></img>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/GuessingGame.js"></script>
+  </body>
+</html>
